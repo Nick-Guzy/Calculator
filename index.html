@@ -9,12 +9,13 @@
     <title>Calculator</title>
 </head>
 <body>
+    <header>Calculator</header>
     <form>
         <label for="number1">First number</label>
         <input type="number" id="number1" name="number1">
         <label for="number2">Second number</label>
         <input type="number" id="number2" name="number2">
-        Operator:
+        <br>Operator:
         <select id="operator-select">
             <option>+</option>
             <option>-</option>
@@ -23,5 +24,29 @@
         </select>
         <button type="submit" id="submit-button">Submit</button>
     </form>
+    <main>
+        <div id="calculator">
+            <div id="button-grid">
+                <div id="calculator-display"></div>
+                <div class="calculator-button">7</div>
+                <div class="calculator-button">8</div>
+                <div class="calculator-button">9</div>
+                <div class="calculator-button">×</div>
+                <div class="calculator-button">4</div>
+                <div class="calculator-button">5</div>
+                <div class="calculator-button">6</div>
+                <div class="calculator-button">÷</div>
+                <div class="calculator-button">1</div>
+                <div class="calculator-button">2</div>
+                <div class="calculator-button">3</div>
+                <div class="calculator-button">-</div>
+                <div id="zero-button" class="calculator-button">0</div>
+                <div class="calculator-button">=</div>
+                <div class="calculator-button">+</div>
+            </div>
+            
+        </div>        
+    </main>
+    
 </body>
 </html>
