@@ -11,6 +11,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 4rem;
 }
 
 form {
@@ -27,8 +28,9 @@ main {
   width: 50vw;
   height: 60vw;
   border-radius: 1rem;
-  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.447);
-  padding: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.318);
+  box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.447);
+  padding: 1rem;
 }
 
 #button-grid {
@@ -41,22 +43,42 @@ main {
 }
 
 .calculator-button {
-  background-color: salmon;
+  background-color: rgb(157, 157, 157);
+  color: rgb(229, 229, 229);
+  text-shadow: 1px 1px 2px black;
   font-size: 3rem;
   font-family: sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 0.5rem;
 }
-
+.calculator-button.operator {
+  background-color: rgb(188, 175, 175);
+}
+#equals-button {
+  background-color: rgb(161, 177, 161);
+}
 #zero-button {
   grid-column-start: 1;
   grid-column-end: 3;
 }
+#clear-button {
+  font-size: 1.5rem;
+  background-color: rgb(135, 117, 85);
+}
 #calculator-display {
   grid-column-start: 1;
-  grid-column-end: 5;
-  background-color: olive;
+  grid-column-end: 4;
+  background-color: rgb(157, 157, 105);
   border-radius: 1rem;
-  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 1rem;
+  font-size: 4rem;
+  font-family: 'Orbitron', sans-serif;
+  color: rgb(216, 216, 216);
+  text-shadow: 1px 1px 2px black;
+  border: 2px inset rgba(152, 152, 152, 0.693);
 }
