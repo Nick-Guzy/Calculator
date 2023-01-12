@@ -27,6 +27,8 @@ main {
   background-color: gray;
   width: 50vw;
   height: 60vw;
+  min-width: 300px;
+  min-height: 400px;
   border-radius: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.318);
   box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.447);
@@ -68,6 +70,7 @@ main {
   background-color: rgb(135, 117, 85);
 }
 #calculator-display {
+  height: 100%;
   grid-column-start: 1;
   grid-column-end: 4;
   background-color: rgb(157, 157, 105);
@@ -76,7 +79,7 @@ main {
   align-items: center;
   justify-content: flex-end;
   padding-right: 1rem;
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: 'Orbitron', sans-serif;
   color: rgb(216, 216, 216);
   text-shadow: 1px 1px 2px black;
